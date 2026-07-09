@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz App</h1>
+
+      <!-- Start Screen -->
+      <div id="start-screen">
+        <p class="subtitle">Test your knowledge across different topics</p>
+        <div class="category-select">
+          <label for="category">Choose a category:</label>
+          <select id="category">
+            <option value="general">General Knowledge</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+          </select>
+        </div>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="hidden">
+        <div class="quiz-header">
+          <span id="question-counter">Question 1 of 5</span>
+          <span id="timer">⏱ <span id="time-left">15</span>s</span>
+        </div>
+        <div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+        <h2 id="question-text"></h2>
+        <ul id="choices-list"></ul>
+        <button id="next-btn" class="hidden">Next Question →</button>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result-screen" class="hidden">
+        <div id="result-icon"></div>
+        <h2>Quiz Complete!</h2>
+        <p id="score-text"></p>
+        <p id="score-message"></p>
+        <div id="review-list"></div>
+        <button id="restart-btn">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
