@@ -1,6 +1,6 @@
 # Quiz App
 
-A responsive Quiz Application built using HTML, CSS, and JavaScript. Users can test their knowledge by selecting different categories, answering timed questions, and reviewing their performance at the end.
+A responsive Quiz Application built using HTML, CSS, and JavaScript. Users can test their knowledge by selecting different categories, answering timed questions, and reviewing their performance at the very end.
 
 ## Features
 
